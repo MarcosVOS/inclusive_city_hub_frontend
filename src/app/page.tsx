@@ -1,7 +1,7 @@
 "use client";
 
 import Button from "@/components/ui/Button";
-import Input from "@/components/ui/input";
+import Input from "@/components/ui/Input";
 import { ArrowRightIcon } from "@phosphor-icons/react";
 import React from "react";
 
