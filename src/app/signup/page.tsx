@@ -6,7 +6,7 @@ import { ArrowRightIcon } from "@phosphor-icons/react";
 import Link from "next/link";
 import React from "react";
 
-export default function LoginPage() {
+export default function SignupPage() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen p-6 font-sans bg-brand-orange">
       <div className="w-full max-w-xs mx-auto">

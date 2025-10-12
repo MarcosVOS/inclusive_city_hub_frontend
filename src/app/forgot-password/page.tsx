@@ -5,7 +5,7 @@ import Input from "@/components/ui/input";
 import React from "react";
 import Link from "next/link";
 
-export default function LoginPage() {
+export default function ForgotPasswordPage() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen p-6 font-sans bg-brand-orange">
       <div className="w-full max-w-xs mx-auto bg-[#F5B041] p-4 rounded-lg">
