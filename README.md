@@ -14,6 +14,7 @@ Este projeto foi construído utilizando as seguintes tecnologias:
 - **[React](https://react.dev/)**: Uma biblioteca JavaScript para criar interfaces de usuário.
 - **[TypeScript](https://www.typescriptlang.org/)**: Um superset do JavaScript que adiciona tipagem estática.
 - **[Tailwind CSS](https://tailwindcss.com/)**: Um framework de CSS para estilização rápida.
+- **[phosphor-icons](https://phosphoricons.com/)**: Uma bilbioteca de icons para React
 
 ---
 
