@@ -22,7 +22,7 @@ export default function LoginPage() {
 
         <div className="mt-3">
           <a
-            href="#"
+            href="/forgot-password"
             className="text-sm font-bold text-white underline text-xl"
           >
             Esqueci minha senha
@@ -33,7 +33,7 @@ export default function LoginPage() {
 
         <div className="mt-8 text-center text-white font-semibold">
           <a
-            href="#"
+            href="/signup"
             className="block mb-2 font-bold text-xl flex gap-2 justify-center align-middle"
           >
             Criar conta
@@ -41,7 +41,7 @@ export default function LoginPage() {
           </a>
 
           <a
-            href="#"
+            href="/help"
             className="block mb-2 font-bold text-xl flex gap-2 justify-center align-middle"
           >
             Ajuda para acessar
