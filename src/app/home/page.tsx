@@ -7,6 +7,7 @@ import {
   StarIcon,
 } from "@phosphor-icons/react";
 import Image from "next/image";
+import { redirect } from "next/navigation";
 
 export default function Home() {
   return (
@@ -30,21 +31,25 @@ export default function Home() {
           icon={<CalendarIcon className="text-[#274941]" size={64} />}
           label="Eventos Próximos"
           bgColor="bg-[#E67E22]"
+          onClick={() => redirect("/events")}
         />
         <HomeButton
           icon={<PuzzlePieceIcon className="text-[#274941]" size={64} />}
           label="Categorias"
           bgColor="bg-[#F39C12]"
+          onClick={() => redirect("/categories")}
         />
         <HomeButton
           icon={<StarIcon className="text-[#274941]" size={64} />}
           label="Favoritos"
           bgColor="bg-[#D35400]"
+          onClick={() => redirect("/favorites")}
         />
         <HomeButton
           icon={<GearIcon className="text-[#274941]" size={64} />}
           label="Configurações"
           bgColor="bg-[#CA6F1E]"
+          onClick={() => redirect("/settings")}
         />
       </div>
     </main>

@@ -1,8 +1,11 @@
-type HomeButtonProps = {
+import React from "react";
+import { ButtonHTMLAttributes } from "react";
+
+interface HomeButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   icon: React.ReactNode;
   label: string;
   bgColor: string;
-};
+}
 
 const HomeButton = ({ icon, label, bgColor }: HomeButtonProps) => (
   <div
