@@ -1,5 +1,7 @@
 "use client";
 
+import Button from "@/components/ui/Button";
+import Input from "@/components/ui/input";
 import { ArrowRightIcon } from "@phosphor-icons/react";
 import React from "react";
 
@@ -14,17 +16,8 @@ export default function LoginPage() {
         </h1>
 
         <form className="flex flex-col gap-5">
-          <input
-            type="email"
-            placeholder="E-mail"
-            className="w-full px-6 py-4 font-bold rounded-lg focus:outline-none  bg-[#F8C963] placeholder:text-[#255391] text-xl"
-          />
-
-          <input
-            type="password"
-            placeholder="Senha"
-            className="w-full px-6 py-4 font-bold rounded-lg focus:outline-none  bg-[#F8C963] placeholder:text-[#255391] text-xl"
-          />
+          <Input type="email" placeholder="E-mail" />
+          <Input type="password" placeholder="Senha" />
         </form>
 
         <div className="mt-3">
@@ -36,9 +29,7 @@ export default function LoginPage() {
           </a>
         </div>
 
-        <button className="w-full bg-[#255391] text-white text-base font-bold py-4 mt-1 rounded-lg  transition-colors">
-          ENTRAR
-        </button>
+        <Button className="mt-10">Entrar</Button>
 
         <div className="mt-8 text-center text-white font-semibold">
           <a
@@ -53,7 +44,7 @@ export default function LoginPage() {
             href="#"
             className="block mb-2 font-bold text-xl flex gap-2 justify-center align-middle"
           >
-            Ajuda para
+            Ajuda para acessar
             <ArrowRightIcon size={24} weight="bold" />
           </a>
         </div>

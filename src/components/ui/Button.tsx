@@ -1,14 +1,22 @@
-import React from "react";
+import React, { ButtonHTMLAttributes, ReactNode } from "react";
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  children: ReactNode;
   className?: string;
 }
 
-export function Button({ className, ...props }: ButtonProps) {
+const Button = ({ children, className, ...props }: ButtonProps) => {
   return (
     <button
+      className={`w-full bg-[#255391] text-white text-base font-bold py-4 mt-1 rounded-lg transition-colors hover:bg-opacity-90 ${
+        className || ""
+      }`}
       {...props}
-      className={"rounded-md font-semibold px-4 py-2 focus:outline-none"}
-    />
+    >
+      {children}
+    </button>
   );
-}
+};
+Button.displayName = "Button";
+
+export default Button;
