@@ -4,6 +4,7 @@ import Button from "@/components/ui/Button";
 import Input from "@/components/ui/Input";
 import { ArrowRightIcon } from "@phosphor-icons/react";
 import Link from "next/link";
+import { redirect } from "next/navigation";
 import React from "react";
 
 export default function LoginPage() {
@@ -30,7 +31,14 @@ export default function LoginPage() {
           </Link>
         </div>
 
-        <Button className="mt-10">Entrar</Button>
+        <Button
+          className="mt-10"
+          onClick={() => {
+            redirect("/home");
+          }}
+        >
+          Entrar
+        </Button>
 
         <div className="mt-8 text-center text-white font-semibold">
           <Link
