@@ -4,11 +4,58 @@ import {
   ArrowRightIcon,
   CalendarIcon,
   CheckerboardIcon,
+  HorseIcon,
+  PersonSimpleBikeIcon,
   PersonSimpleIcon,
   PersonSimpleRunIcon,
 } from "@phosphor-icons/react";
 import Image from "next/image";
 import Link from "next/link";
+
+const events = [
+  {
+    title: "Caminhada no parque",
+    emoji: (
+      <PersonSimpleRunIcon
+        className="text-[#274941] bg-[#FF891A] rounded"
+        size={64}
+      />
+    ),
+  },
+  {
+    title: "Yoga ao ar livre",
+    emoji: (
+      <PersonSimpleIcon
+        className="text-[#274941] bg-[#FF891A] rounded"
+        size={64}
+      />
+    ),
+  },
+  {
+    title: "Xadrez no parque",
+    emoji: (
+      <HorseIcon className="text-[#274941] bg-[#FF891A] rounded" size={64} />
+    ),
+  },
+  {
+    title: "Ciclismo em grupo",
+    emoji: (
+      <PersonSimpleBikeIcon
+        className="text-[#274941] bg-[#FF891A] rounded"
+        size={64}
+      />
+    ),
+  },
+  {
+    title: "Torneio de damas",
+    emoji: (
+      <CheckerboardIcon
+        className="text-[#274941] bg-[#FF891A] rounded"
+        size={64}
+      />
+    ),
+  },
+];
 
 export default function EventsPage() {
   return (
@@ -23,33 +70,24 @@ export default function EventsPage() {
       </header>
 
       <div className="bg-[#255391] w-full flex-grow rounded-t-3xl p-4 ">
-        <button className="flex text-white justify-center items-center gap-2 mb-4 p-4 bg-[#F5B041] rounded-lg w-full text-xl uppercase font-black  ">
+        {/* <button className="flex text-white justify-center items-center gap-2 mb-4 p-4 bg-[#F5B041] rounded-lg w-full text-xl uppercase font-black  ">
           Achar eventos próximos
           <ArrowRightIcon className="text-white" size={32} />
-        </button>
-        <div className="bg-[#F5B041] rounded-lg mt-4 text-white">
-          <PersonSimpleRunIcon className="text-white" size={128} />
-          <h3>Caminhada no parque</h3>
-          <p>Data: 25/12/2024</p>
-          <p>Local: Parque Central</p>
-          <Link href="#">Ver detalhes</Link>
-        </div>
+        </button> */}
 
-        <div className="bg-[#F5B041] rounded-lg mt-4 text-white">
-          <PersonSimpleIcon className="text-white" size={128} />
-          <h3>Caminhada no parque</h3>
-          <p>Data: 25/12/2024</p>
-          <p>Local: Parque Central</p>
-          <Link href="#">Ver detalhes</Link>
-        </div>
-
-        <div className="bg-[#F5B041] rounded-lg mt-4 text-white">
-          <CheckerboardIcon className="text-white" size={128} />
-          <h3>Caminhada no parque</h3>
-          <p>Data: 25/12/2024</p>
-          <p>Local: Parque Central</p>
-          <Link href="#">Ver detalhes</Link>
-        </div>
+        {events.map((event, index) => (
+          <div
+            key={index}
+            className="bg-[#F5B041] rounded-lg mt-4 text-white flex content-between w-full p-2 justify-between text-lg font-black"
+          >
+            {event.emoji}
+            <h3 className="flex items-center">{event.title}</h3>
+            <Link className="flex items-end" href="#">
+              Ver detalhes
+              <ArrowRightIcon className="text-white" size={24} />
+            </Link>
+          </div>
+        ))}
       </div>
     </main>
   );
