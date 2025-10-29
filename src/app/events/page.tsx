@@ -14,7 +14,7 @@ import Link from "next/link";
 
 const events = [
   {
-    title: "Caminhada no parque",
+    title: "Esporte ao ar livre",
     emoji: (
       <PersonSimpleRunIcon
         className="text-[#274941] bg-[#FF891A] rounded"
@@ -23,18 +23,12 @@ const events = [
     ),
   },
   {
-    title: "Yoga ao ar livre",
+    title: "Yoga",
     emoji: (
       <PersonSimpleIcon
         className="text-[#274941] bg-[#FF891A] rounded"
         size={64}
       />
-    ),
-  },
-  {
-    title: "Xadrez no parque",
-    emoji: (
-      <HorseIcon className="text-[#274941] bg-[#FF891A] rounded" size={64} />
     ),
   },
   {
@@ -47,7 +41,7 @@ const events = [
     ),
   },
   {
-    title: "Torneio de damas",
+    title: "Lazer",
     emoji: (
       <CheckerboardIcon
         className="text-[#274941] bg-[#FF891A] rounded"

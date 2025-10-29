@@ -33,24 +33,24 @@ export default function Home() {
           bgColor="bg-[#E67E22]"
           onClick={() => redirect("/events")}
         />
-        <HomeButton
+        {/* <HomeButton
           icon={<PuzzlePieceIcon className="text-[#274941]" size={64} />}
           label="Categorias"
           bgColor="bg-[#F39C12]"
           onClick={() => redirect("/categories")}
-        />
+        /> */}
         <HomeButton
           icon={<StarIcon className="text-[#274941]" size={64} />}
           label="Favoritos"
           bgColor="bg-[#D35400]"
           onClick={() => redirect("/favorites")}
         />
-        <HomeButton
+        {/* <HomeButton
           icon={<GearIcon className="text-[#274941]" size={64} />}
           label="Configurações"
           bgColor="bg-[#CA6F1E]"
           onClick={() => redirect("/settings")}
-        />
+        /> */}
       </div>
     </main>
   );
