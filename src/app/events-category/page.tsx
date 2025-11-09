@@ -4,15 +4,13 @@ import {
   ArrowRightIcon,
   CalendarIcon,
   CheckerboardIcon,
-  HorseIcon,
   PersonSimpleBikeIcon,
   PersonSimpleIcon,
   PersonSimpleRunIcon,
 } from "@phosphor-icons/react";
-import Image from "next/image";
 import Link from "next/link";
 
-const events = [
+const category = [
   {
     title: "Esporte ao ar livre",
     emoji: (
@@ -21,6 +19,7 @@ const events = [
         size={64}
       />
     ),
+    eventType: "outdoor-sport",
   },
   {
     title: "Yoga",
@@ -30,6 +29,7 @@ const events = [
         size={64}
       />
     ),
+    eventType: "yoga",
   },
   {
     title: "Ciclismo em grupo",
@@ -39,6 +39,7 @@ const events = [
         size={64}
       />
     ),
+    eventType: "group-sport",
   },
   {
     title: "Lazer",
@@ -48,6 +49,7 @@ const events = [
         size={64}
       />
     ),
+    eventType: "leisure",
   },
 ];
 
@@ -69,14 +71,17 @@ export default function EventsPage() {
           <ArrowRightIcon className="text-white" size={32} />
         </button> */}
 
-        {events.map((event, index) => (
+        {category.map((event, index) => (
           <div
             key={index}
             className="bg-[#F5B041] rounded-lg mt-4 text-white flex content-between w-full p-2 justify-between text-lg font-black"
           >
             {event.emoji}
             <h3 className="flex items-center">{event.title}</h3>
-            <Link className="flex items-end" href="#">
+            <Link
+              className="flex items-end"
+              href={`/list-events/${event.eventType}`}
+            >
               Ver detalhes
               <ArrowRightIcon className="text-white" size={24} />
             </Link>

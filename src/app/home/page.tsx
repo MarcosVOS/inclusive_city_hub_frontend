@@ -31,7 +31,7 @@ export default function Home() {
           icon={<CalendarIcon className="text-[#274941]" size={64} />}
           label="Eventos Próximos"
           bgColor="bg-[#E67E22]"
-          onClick={() => redirect("/events")}
+          onClick={() => redirect("/events-category")}
         />
         {/* <HomeButton
           icon={<PuzzlePieceIcon className="text-[#274941]" size={64} />}
