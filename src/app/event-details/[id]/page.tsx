@@ -31,6 +31,7 @@ export default function EventsPage() {
                 <p className="text-sm">
                   {event.Date} | {event.Local}
                 </p>
+                <p>{event.description}</p>
               </div>
             </div>
 
