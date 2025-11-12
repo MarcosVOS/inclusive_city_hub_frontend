@@ -13,17 +13,17 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
       <header className="flex text-white font-black justify-between items-center gap-4 p-8 w-full text-4xl">
-        <div>
-          Bem vindo,
-          <br />
-          Convidado
-        </div>
         <Image
           src="/viva_sp.png"
           width={128}
           height={128}
           alt="Picture of the author"
         />
+        <div>
+          Bem vindo,
+          <br />
+          Convidado
+        </div>
       </header>
 
       <div className="bg-[#255391] w-full flex-grow rounded-t-3xl p-4 grid grid-cols-2 gap-6 place-content-center">

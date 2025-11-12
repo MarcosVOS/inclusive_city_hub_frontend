@@ -6,12 +6,19 @@ import { ArrowRightIcon } from "@phosphor-icons/react";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import React from "react";
+import Image from "next/image";
 
 export default function LoginPage() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen p-6 font-sans bg-brand-orange">
       <div className="w-full max-w-xs mx-auto">
-        <h1 className="text-5xl text-center text-white font-black mb-16">
+        <h1 className="text-5xl text-center text-white font-black mb-16 flex flex-col items-center">
+          <Image
+            src="/viva_sp.png"
+            alt="Inclusive City"
+            width={200}
+            height={200}
+          />
           Cidades
           <br />
           inclusivas
